@@ -11,14 +11,38 @@ Option Strict On
 Module SimpleCalculator
     Sub Main()
 
-        Console.WriteLine("Choose a Number: 22")
-        Console.WriteLine()
+        Dim userInput As String
+        Dim firstNumber As Integer
+        Dim secondNumber As Decimal
 
-        Console.WriteLine("Choose a Number: 23")
-        Console.WriteLine()
+        firstNumber = CInt(userInput)
+        secondNumber = CInt(userInput)
+
+        Console.WriteLine("Give me number")
 
 
+        Console.WriteLine("What willest thou of the numbers: " & vbNewLine _
+                          & "1. Addition" & vbNewLine _
+                          & "2. Subtract" & vbNewLine _
+                          & "3. Multiply" & vbNewLine)
 
+        userinput = Console.ReadLine()
+
+
+        Console.WriteLine($"Thou hast decidest well...")
+
+        If userinput = "1" Then
+            Console.WriteLine("Addicus Numerus!!!")
+            Console.WriteLine($"{FirstNumber} + {SecondNumber} = {FirstNumber} + {SecondNumber}")
+        ElseIf userinput = "2" Then
+            Console.WriteLine("Digitus Subtractorius!!!")
+            Console.WriteLine($"{FirstNumber} - {SecondNumber} = {FirstNumber} - {SecondNumber}")
+        ElseIf userinput = "3" Then
+            Console.WriteLine("MULTIPLICASHITUS!!!")
+            Console.WriteLine($"{FirstNumber} * {SecondNumber} = {FirstNumber} * {SecondNumber}")
+        Else
+            Console.WriteLine("YOU SHALL NOT PASS!!!")
+        End If
 
     End Sub
 
