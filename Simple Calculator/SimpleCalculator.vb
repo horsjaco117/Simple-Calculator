@@ -23,7 +23,7 @@ Module SimpleCalculator
 
         secondNumber = CInt(userInput)
 
-        'menu below
+        'menu below with options. _ is utilized
 
         Console.WriteLine("What willest thou of the numbers..." & vbNewLine & "(pick an option): " & vbNewLine _
                           & "1. Addition Elixir" & vbNewLine _
