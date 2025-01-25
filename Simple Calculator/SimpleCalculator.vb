@@ -1,47 +1,48 @@
-﻿'Jacob Horsley
-'Spring 2025
-'RCET 2265
-'Simple Calculator
-'
-
-Option Explicit On
+﻿Option Explicit On
 Option Strict On
 
-
 Module SimpleCalculator
+    'Jacob Horsley
+    'Spring 2025
+    'RCET 2265
+    'Simple Calculator
     Sub Main()
 
         Dim userInput As String
         Dim firstNumber As Integer
-        Dim secondNumber As Decimal
+        Dim secondNumber As Integer
+
+
+        Console.WriteLine("Pick thyself a digit")
+        userInput = Console.ReadLine()
 
         firstNumber = CInt(userInput)
+
+        Console.WriteLine("Pick an additional numero")
+        userInput = Console.ReadLine()
+
         secondNumber = CInt(userInput)
 
-        Console.WriteLine("Give me number")
-
-
         Console.WriteLine("What willest thou of the numbers: " & vbNewLine _
-                          & "1. Addition" & vbNewLine _
-                          & "2. Subtract" & vbNewLine _
-                          & "3. Multiply" & vbNewLine)
+                          & "1. Addition Elixir" & vbNewLine _
+                          & "2. Subtractium ore" & vbNewLine _
+                          & "3. Multiplication for the gnomes" & vbNewLine)
 
-        userinput = Console.ReadLine()
-
+        userInput = Console.ReadLine()
 
         Console.WriteLine($"Thou hast decidest well...")
 
-        If userinput = "1" Then
+        If userInput = "1" Then
             Console.WriteLine("Addicus Numerus!!!")
-            Console.WriteLine($"{FirstNumber} + {SecondNumber} = {FirstNumber} + {SecondNumber}")
-        ElseIf userinput = "2" Then
+            Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}")
+        ElseIf userInput = "2" Then
             Console.WriteLine("Digitus Subtractorius!!!")
-            Console.WriteLine($"{FirstNumber} - {SecondNumber} = {FirstNumber} - {SecondNumber}")
-        ElseIf userinput = "3" Then
+            Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}")
+        ElseIf userInput = "3" Then
             Console.WriteLine("MULTIPLICASHITUS!!!")
-            Console.WriteLine($"{FirstNumber} * {SecondNumber} = {FirstNumber} * {SecondNumber}")
+            Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}")
         Else
-            Console.WriteLine("YOU SHALL NOT PASS!!!")
+            Console.WriteLine("PSYCH! YOU SHALL NOT PASS!!!")
         End If
 
     End Sub
