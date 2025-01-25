@@ -6,6 +6,7 @@ Module SimpleCalculator
     'Spring 2025
     'RCET 2265
     'Simple Calculator
+    'https://github.com/horsjaco117/Simple-Calculator
     Sub Main()
 
         Dim userInput As String    'Assigning variables
