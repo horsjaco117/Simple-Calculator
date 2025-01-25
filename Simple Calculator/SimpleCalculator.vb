@@ -8,29 +8,33 @@ Module SimpleCalculator
     'Simple Calculator
     Sub Main()
 
-        Dim userInput As String
+        Dim userInput As String    'Assigning variables
         Dim firstNumber As Integer
         Dim secondNumber As Integer
 
 
-        Console.WriteLine("Pick thyself a digit")
+        Console.WriteLine("Pick thyself a digit") 'user decides #
         userInput = Console.ReadLine()
 
         firstNumber = CInt(userInput)
 
-        Console.WriteLine("Pick an additional numero")
+        Console.WriteLine("Choose an additional numero") '# 2
         userInput = Console.ReadLine()
 
         secondNumber = CInt(userInput)
 
-        Console.WriteLine("What willest thou of the numbers: " & vbNewLine _
+        'menu below
+
+        Console.WriteLine("What willest thou of the numbers..." & vbNewLine & "(pick an option): " & vbNewLine _
                           & "1. Addition Elixir" & vbNewLine _
                           & "2. Subtractium ore" & vbNewLine _
                           & "3. Multiplication for the gnomes" & vbNewLine)
 
-        userInput = Console.ReadLine()
+        userInput = Console.ReadLine() ' user decides
 
-        Console.WriteLine($"Thou hast decidest well...")
+        Console.WriteLine($"Thou hast decided well...")
+
+        'Results of userInput
 
         If userInput = "1" Then
             Console.WriteLine("Addicus Numerus!!!")
